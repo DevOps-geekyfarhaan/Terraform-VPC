@@ -13,6 +13,7 @@ module "ec2" {
   source  = "./modules/ec2"
   sg_id   = module.sg.sg_id
   subnets = module.vpc.subnets_ids
+  key_pair_name = module.ec2.key_pair_name.id
 }
 
 module "alb" {

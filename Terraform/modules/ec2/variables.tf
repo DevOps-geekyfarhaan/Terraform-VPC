@@ -15,8 +15,6 @@ variable "ec2_names" {
 }
 
 
-variable "DevOps" {
-  description = "Importing already created Key Pair"
-  type        = string
-  default     = "DevOps.pem"
+variable "key_pair_name" {
+  description = "AWS key pair"
 }
