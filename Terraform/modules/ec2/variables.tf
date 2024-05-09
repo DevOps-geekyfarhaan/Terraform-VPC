@@ -14,7 +14,3 @@ variable "ec2_names" {
   default = [ "WebServer1", "WebSever2" ]
 }
 
-
-variable "key_pair_name" {
-  description = "AWS key pair"
-}
